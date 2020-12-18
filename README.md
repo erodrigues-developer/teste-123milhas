@@ -1,24 +1,41 @@
-# Lumen PHP Framework
+# Passo à passo para execução
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+Pré-requisitos:
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+-GIT
 
-## Official Documentation
+ **Via docker**
+ 
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+ - Docker instalado. É possível obter através do link: https://docs.docker.com/get-docker/
 
-## Contributing
+**Via Servidor Local**
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+ - PHP 7.3 ou superior instalado https://www.php.net/downloads
+ - Composer https://getcomposer.org/download/
 
-## Security Vulnerabilities
+ **Passos Via Docker:**
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+ 1. Clone o repositório através do comando `git clone https://github.com/erodrigues-developer/teste-123milhas.git`
+ 2. Abra a pasta raiz do projeto.
+ 3. Clone o arquivo .env.example e renomeie para .env
+ 4. Execute o comando: `docker build -t teste-123milhas .` para criar a imagem.
+ 5. Execute o comando: `docker run -p8080:80 teste-123milhas`
+ 
+ 
+**Passos Via  Servidor Local** 
+ 1. Clone o repositório através do comando `git clone https://github.com/erodrigues-developer/teste-123milhas.git`
+ 2. Abra a pasta raiz do projeto.
+ 3. Clone o arquivo .env.example e renomeie para .env
+ 4. Execute o comando `composer install`.
+ 5. Execute o comando `php -S localhost:8080 -t public`
 
-## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- O projeto já está pronto para ser executado, abra o navegador no endereço 
+
+> localhost:8080/docs
+
+ para conferir a documentação da api.
+- Para testar o funcionamento da API basta acessar a URL 
+
+> localhost:8080/api/v1/flights
