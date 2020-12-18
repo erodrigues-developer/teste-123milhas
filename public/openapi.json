@@ -1,0 +1,235 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Prova Desenvolvedor Backend - 123 Milhas.",
+        "description": "Candidato - Everton Rodrigues",
+        "termsOfService": "",
+        "contact": {
+            "email": "erodrigues.developer@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/flights": {
+            "get": {
+                "tags": [
+                    "flights"
+                ],
+                "summary": "Flights data",
+                "description": "Return all flights and groups data",
+                "operationId": "App\\Http\\Controllers\\FlightController::index",
+                "responses": {
+                    "200": {
+                        "description": "Flights data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "flights": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "integer"
+                                                        },
+                                                        "cia": {
+                                                            "type": "string"
+                                                        },
+                                                        "fare": {
+                                                            "type": "string"
+                                                        },
+                                                        "flightNumber": {
+                                                            "type": "string"
+                                                        },
+                                                        "origin": {
+                                                            "type": "string"
+                                                        },
+                                                        "destination": {
+                                                            "type": "string"
+                                                        },
+                                                        "departureDate": {
+                                                            "type": "string"
+                                                        },
+                                                        "arrivalDate": {
+                                                            "type": "string"
+                                                        },
+                                                        "departureTime": {
+                                                            "type": "string"
+                                                        },
+                                                        "arrivalTime": {
+                                                            "type": "string"
+                                                        },
+                                                        "classService": {
+                                                            "type": "integer"
+                                                        },
+                                                        "price": {
+                                                            "type": "number"
+                                                        },
+                                                        "tax": {
+                                                            "type": "integer"
+                                                        },
+                                                        "outbound": {
+                                                            "type": "integer"
+                                                        },
+                                                        "inbound": {
+                                                            "type": "integer"
+                                                        },
+                                                        "duration": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "groups": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "uniqueId": {
+                                                            "type": "integer"
+                                                        },
+                                                        "totalPrice": {
+                                                            "type": "number"
+                                                        },
+                                                        "outbound": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "cia": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "fare": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "flightNumber": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "origin": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "destination": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "departureDate": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "arrivalDate": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "departureTime": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "arrivalTime": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "classService": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "price": {
+                                                                        "type": "number"
+                                                                    },
+                                                                    "tax": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "outbound": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "inbound": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "duration": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        },
+                                                        "inbound": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "cia": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "fare": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "flightNumber": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "origin": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "destination": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "departureDate": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "arrivalDate": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "departureTime": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "arrivalTime": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "classService": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "price": {
+                                                                        "type": "number"
+                                                                    },
+                                                                    "tax": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "outbound": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "inbound": {
+                                                                        "type": "integer"
+                                                                    },
+                                                                    "duration": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "totalGroups": {
+                                                "type": "integer"
+                                            },
+                                            "totalFlights": {
+                                                "type": "integer"
+                                            },
+                                            "cheapestPrice": {
+                                                "type": "number"
+                                            },
+                                            "cheapestGroup": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
