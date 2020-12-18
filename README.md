@@ -4,10 +4,10 @@ Pré-requisitos:
 
 -GIT
 
- **Via docker**
- 
+ **Via docker** 
 
  - Docker instalado. É possível obter através do link: https://docs.docker.com/get-docker/
+ - Composer https://getcomposer.org/download/
 
 **Via Servidor Local**
 
@@ -19,6 +19,7 @@ Pré-requisitos:
  1. Clone o repositório através do comando `git clone https://github.com/erodrigues-developer/teste-123milhas.git`
  2. Abra a pasta raiz do projeto.
  3. Clone o arquivo .env.example e renomeie para .env
+ 4. Execute o comando `composer install`.
  4. Execute o comando: `docker build -t teste-123milhas .` para criar a imagem.
  5. Execute o comando: `docker run -p8080:80 teste-123milhas`
  
